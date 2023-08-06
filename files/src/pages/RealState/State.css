@@ -1,0 +1,32 @@
+.fixed-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+  }
+
+
+@media (min-width:660px) {
+  .InfoBar {
+    display: none;
+  }
+}
+
+@media (min-width:500px) {
+  .InfoBar {
+    display: none;
+  }
+}
+
+@media (min-width:400px) {
+  .InfoBar {
+    display: none;
+  }
+}
+
+@media (min-width:320px) {
+  .InfoBar {
+    display: none;
+  }
+}

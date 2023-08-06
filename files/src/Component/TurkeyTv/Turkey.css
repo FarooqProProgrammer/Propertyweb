@@ -1,0 +1,416 @@
+
+.pt-videos-listing figure  {
+    width: 100% !important;
+    height: 10rem;
+    margin: 0rem !important;
+}
+
+
+
+.pt-videos-listing a  {
+    margin-bottom: 0rem;
+}
+
+
+
+.pt-videos-listing .video-item  {
+    height: 16rem;
+}
+
+
+
+.pt-videos-listing .video-item:not(:last-of-type)  {
+    padding-right: 0.5rem;
+}
+
+
+
+.pt-videos-listing a h2  {
+    margin: 0.1rem;
+    font-size: 1.4rem;
+    color: #5e5a59;
+    font-weight: 800;
+    line-height: 19px;
+    padding: 5px;
+    height: calc(6rem - 0.5rem);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#videos.pt-videos-listing  {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 0;
+}
+
+
+
+#videos.pt-videos-listing .text-center:last-of-type  {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+
+
+  .pt-videos-listing a h2  {
+    padding: 0.5rem;
+}
+
+
+
+.abhaya  {
+    font-family: 'Abhaya Libre', serif !important;
+}
+
+
+
+.title-lined  {
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 0rem;
+    color: #333333;
+    font-weight: 200;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+.title-lined b  {
+    color: #5e5a59;
+}
+
+
+
+.title-lined b  {
+    font-size: 2.9rem;
+}
+
+
+
+.title-lined .light-text  {
+    color: #d51f1e;
+}
+
+
+
+.title-lined .gray  {
+    color: #d51f1e;
+    font-weight: 200;
+    margin: 0px 5px;
+}
+
+
+
+.title-lined.text-left  {
+    text-align: left;
+}
+
+
+
+.title-lined .fa  {
+    display: none;
+}
+
+
+
+  .wrap-dis-85  {
+    width: 85% !important;
+}
+
+
+
+[dir="rtl"] .title-lined.text-left  {
+    text-align: right;
+}
+
+
+
+.featured-in .title-lined  {
+    font-size: 2.9rem;
+}
+
+
+
+  .featured-in .title-lined  {
+    font-size: 2.9rem;
+}
+
+
+
+  .title-lined.text-left  {
+    font-size: 2rem !important;
+}
+
+
+
+#new-properties .title-lined  {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+
+#featured-properties .title-lined  {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+
+
+#hot-properties .title-lined  {
+    margin: 1rem 0;
+    font-size: 2.9rem;
+    padding-bottom: 2rem;
+    color: #333;
+}
+
+
+
+#hot-properties .title-lined strong  {
+    color: #5e5a59;
+}
+
+
+
+#featured-properties .title-lined span  {
+    color: #cf1f1d;
+}
+
+
+
+.featured_prop .title-lined .light-text  {
+    color: #000;
+}
+
+
+
+#reviews .title-lined  {
+    margin: 0;
+}
+
+
+
+#testimonials .title-lined  {
+    padding: 0rem 0rem 2rem;
+    color: #333;
+    font-size: 2.9rem;
+}
+
+
+
+#testimonials .title-lined strong  {
+    color: #5e5a59;
+}
+
+
+
+.figure-container  {
+    box-shadow: none;
+    transform: scale(1);
+    border: 1px solid #ddd;
+    height: 100%;
+    transition: all 200ms;
+}
+
+
+
+#Steps h2.title-lined  {
+    margin-block: 4rem;
+}
+
+
+
+.app-banner .wrap-dis-85  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+
+.citizenship-landing h2.title-lined  {
+    font-size: 2.9rem;
+    line-height: inherit;
+}
+
+
+
+.citizenship-landing h2.title-lined b  {
+    font-size: inherit;
+}
+
+
+
+.citizenship-landing .citizenship-intro .title-lined  {
+    font-size: 2.9rem;
+}
+
+
+
+.citizenship-landing .citizenship-intro .title-lined b  {
+    font-size: inherit;
+}
+
+
+
+  .citizenship-landing h2.title-lined  {
+    font-size: 2.5rem;
+}
+
+
+
+  .citizenship-landing .citizenship-intro .title-lined  {
+    font-size: 3rem;
+}
+
+
+
+  #new-properties .title-lined  {
+    text-align: center;
+}
+
+
+
+  .title-lined.text-left  {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+
+
+  .title-lined b  {
+    font-size: 2.9rem;
+    display: inline-block;
+}
+
+
+
+  .title-lined  {
+    width: 95%;
+    margin: 0 !important;
+}
+
+
+
+  .title-lined  {
+    line-height: 51px;
+}
+
+
+
+  .title-lined b  {
+    display: inline-block;
+}
+
+
+
+  .title-lined  {
+    line-height: 28px;
+}
+
+
+
+  #new-turkish-citi .title-lined b  {
+    font-size: 2.9rem;
+    margin: 1rem 0;
+}
+
+
+
+.intl-tel-input .country-list .flag,
+.intl-tel-input .country-list .country-name,
+.intl-tel-input .country-list .dial-code  {
+    vertical-align: middle;
+}
+
+
+
+.intl-tel-input .country-list .flag,
+.intl-tel-input .country-list .country-name  {
+    margin-left: 6px;
+}
+
+
+
+.about-pt--btn:hover,
+.view-all-btn:hover,
+.section--filter-link:hover,
+.sec-about--btn:hover,
+#videos #tags a#cat_6:hover,
+.videos-categories.margin-ver-3 a:hover,
+.right-widget-hover:hover,
+.btn-wanttosell-hover:hover  {
+    background-color: #B93006 !important;
+    color: #FFF !important;
+}
+
+
+
+.rednew-border  {
+    border: 1px solid #B93006 !important;
+}
+
+
+
+.rednew-border:hover  {
+    background-color: #B93006 !important;
+    color: #FFF !important;
+}
+
+
+
+.view-all-btn  {
+    display: inline-block;
+    text-align: center;
+    background: transparent !important;
+}
+
+
+
+.homeVideos-item-play  {
+    display: block;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px !important;
+    height: 29px !important;
+    min-width: initial;
+    min-height: initial;
+    opacity: 0.8;
+}
+
+
+
+  .step2.step input[name="name"]  {
+    padding-left: 48px;
+}
+
+
+
+  [dir='rtl'] textarea[name='whatsapp_textarea']  {
+    direction: rtl;
+}
+
+
+
+  textarea[name='whatsapp_textarea']  {
+    width: 100%;
+}
+
+
+ 
+
+

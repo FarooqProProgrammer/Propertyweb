@@ -1,0 +1,94 @@
+@media (max-width:990px) {
+    .Contact__form {
+        display: none;
+    }
+    .Hide {
+        display: none;
+    }
+    .cameron-header {
+        display: none;
+    }
+    .viewForm {
+      display:none;
+    }
+
+}
+
+.carousel-item {
+    height: 400px !important;
+}
+.carousel-item img {
+    height: 100% !important;
+}
+
+/* --------------------------------------------------------------- */
+
+/* --------------------------------------------------------------- */
+.thumbnail-slider-wrap {
+    margin-top: 15px;
+    height: 85px;
+  }
+  .thumbnail-slider-wrap .slick-track .slick-slide {
+    text-align: center;
+  }
+  .thumbnail-slider-wrap .slick-track .slick-slide img {
+    width: 70%;
+  }
+
+
+/* -- Slider -- */
+.splide__slide img {
+    width: 900px !important;
+    height: 800px;
+    object-fit: cover;
+  }
+  
+  .splide__slide {
+    opacity: 0.6;
+  }
+  
+  .splide__slide.is-active {
+    opacity: 1;
+  }
+  
+  .parent__carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:800px;
+    gap: 1rem;
+    /* margin: 4rem 0 0 0; */
+    /* padding: 0 20%; */
+  }
+  .splide__manual img{
+    height: 600px;
+    width: 100%;
+  }
+  
+  #thumbnail-carousel {
+    padding: 0 3rem;
+  }
+  
+  #main-carousel {
+    padding: 0 3rem;
+  }
+
+
+@media (max-width:550px) {
+  .parent__carousel {
+    width: 90%;
+  }
+  .splide__slide img {
+    @apply w-full h-[500px];
+  }
+}
+@media (max-width:450px) {
+  .parent__carousel {
+    width: 90%;
+    @apply px-5 h-[500px];
+  }
+  .splide__slide img {
+    @apply w-full h-[500px];
+  }
+}

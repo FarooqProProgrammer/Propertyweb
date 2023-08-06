@@ -1,0 +1,16 @@
+/* Subscribe modal */
+.subscribe-modal-input{
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+.subscribe-modal-check{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-modal-submit{
+    width :'320px';
+    padding: '12px 0';
+    background-color: #72685f;
+    color: 'white';
+    text-align: center;
+}

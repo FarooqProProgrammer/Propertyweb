@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.56" height="24" viewBox="0 0 26.56 24">
+    <defs>
+        <style>
+            .cls-1{fill:#5081ff}.cls-2{clip-path:url(#clip-path)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_1605" d="M0 0h26.56v24H0z" class="cls-1" data-name="Rectangle 1605"/>
+        </clipPath>
+    </defs>
+    <g id="shutterstock_675381382_Converted_" data-name="shutterstock_675381382 [Converted]" transform="translate(-87.5 -125)">
+        <g id="Group_607" data-name="Group 607" transform="translate(87.5 125)">
+            <g id="Group_605" class="cls-2" data-name="Group 605">
+                <path id="Path_369" d="M509.267 2195.478a.532.532 0 0 0 .531.533h8.044a.534.534 0 0 0 .534-.533v-10.526a.533.533 0 1 0-1.067 0v9.992h-6.977v-5.565a.533.533 0 0 0-.534-.534h-5.232a.533.533 0 0 0-.534.534v5.685h-7.067v-10.831a.533.533 0 1 0-1.065 0v11.367a.534.534 0 0 0 .534.533h8.133a.534.534 0 0 0 .534-.533v-5.687h4.167zm0 0" class="cls-1" data-name="Path 369" transform="translate(-493.879 -2172.157)"/>
+            </g>
+            <g id="Group_606" class="cls-2" data-name="Group 606">
+                <path id="Path_370" d="M161.714 135.514l-12.773-10.346a.53.53 0 0 0-.664-.006l-12.68 9.99a.532.532 0 1 0 .659.836l12.346-9.724 12.441 10.079a.533.533 0 0 0 .671-.829zm0 0" class="cls-1" data-name="Path 370" transform="translate(-135.394 -125.048)"/>
+            </g>
+        </g>
+    </g>
+</svg>
