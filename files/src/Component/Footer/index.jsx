@@ -8,11 +8,13 @@ import {
   FooterLinksPopularLocationsData,
   FooterLinksPopularSearchesData,
 } from "../../Data/FooterLinksData";
-import PTCoins from "../../assets/Footer/PT-coins.svg";
-import VirtualTouring from "../../assets/Footer/Virtualtouring.svg";
+
+
 import PartnerButton from "../../assets/partner-button-01.svg";
+
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useState } from "react";
+import { PTCoins,VirtualTouring } from "../../assetsManagert";
 
 export default function Footer() {
   let location = useLocation();

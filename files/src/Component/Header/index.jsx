@@ -19,18 +19,16 @@ import { Modal } from "antd";
 import { AuthAction } from "../../Redux/Action/AuthAction";
 import { useDispatch, useSelector } from "react-redux";
 import HeaderNav from "./HeaderNav";
-import PartnertSvg from "../../assets/partner-button-01.svg";
+
 import Image from "../../ReUseAbleComponent/Image";
-import Logo from "../../assets/pt-header-logo.svg";
-import PTHEADERLOGO from "../../assets/pt_new_logo.webp";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { BiCog } from "react-icons/bi";
 import { FaSignOutAlt } from "react-icons/fa";
-import GoogleLogo from "../../assets/google-icon-removebg-preview.png";
 import { IconButton } from "@mui/material";
 import RealStateHeader from "../../pages/RealState/RealStateHeader";
+import { PartnertSvg, GoogleLogo,Logo, PTHEADERLOGO } from "../../assetsManagert";
 
 const style = {
   position: "absolute",
@@ -98,10 +96,10 @@ export default function Header() {
           subscription:
             AccountOptions === "Broker"
               ? {
-                  expires: Date.today().toString("yyyy-MM-d"),
-                  paid: 0,
-                  paidOn: undefined,
-                }
+                expires: Date.today().toString("yyyy-MM-d"),
+                paid: 0,
+                paidOn: undefined,
+              }
               : null,
         });
         alert("Register Successfully");
@@ -447,9 +445,8 @@ export default function Header() {
           </Box>
         </Box>
         <Box
-          className={`elastic-search-form searchWrapper ${
-            searchModelToggle ? "open" : ""
-          }`}
+          className={`elastic-search-form searchWrapper ${searchModelToggle ? "open" : ""
+            }`}
         >
           {/* <form>
             <input
