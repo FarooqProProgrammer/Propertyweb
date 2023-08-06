@@ -1,0 +1,100 @@
+{
+  "name": "property_work",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@headlessui/react": "^1.7.14",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.1",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.4.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "classnames": "^2.3.2",
+    "firebase": "^9.19.1",
+    "i18next": "^22.4.14",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.0",
+    "jquery": "^3.6.4",
+    "mdb-react-ui-kit": "^6.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-country-flag": "^3.1.0",
+    "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-hook-form": "^7.45.0",
+    "react-i18next": "^12.2.0",
+    "react-icons": "^4.8.0",
+    "react-iframe": "^1.8.5",
+    "react-intl-tel-input": "^8.2.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-modal": "^3.16.1",
+    "react-multi-carousel": "^2.8.3",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.2.20",
+    "react-player": "^2.12.0",
+    "react-quill": "^2.0.0",
+    "react-read-more": "^1.0.0",
+    "react-redux": "^8.0.5",
+    "react-render-html": "^0.6.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.3",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.10",
+    "sweetalert2": "^11.7.5",
+    "sweetalert2-react-content": "^5.0.7",
+    "swiper": "^9.2.4",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0-beta.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.3.0"
+  }
+}

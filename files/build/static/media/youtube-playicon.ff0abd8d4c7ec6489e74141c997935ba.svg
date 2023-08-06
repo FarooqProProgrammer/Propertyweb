@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93.592" height="93.591" viewBox="0 0 93.592 93.591">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(0,0,0,.52);stroke:#fff}.cls-2{fill:#fff}.cls-3{fill:none}.cls-4{stroke:none}.cls-5{filter:url(#Ellipse_11)}
+        </style>
+        <filter id="Ellipse_11" width="93.592" height="93.591" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="1"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_425" data-name="Group 425" transform="translate(3 2)">
+        <g class="cls-5" transform="translate(-3 -2)">
+            <g id="Ellipse_11-2" class="cls-1" data-name="Ellipse 11" transform="translate(3 2)">
+                <ellipse cx="43.796" cy="43.796" class="cls-4" rx="43.796" ry="43.796"/>
+                <ellipse cx="43.796" cy="43.796" class="cls-3" rx="43.296" ry="43.296"/>
+            </g>
+        </g>
+        <g id="baseline-play_arrow-24px" transform="translate(11.425 11.425)">
+            <path id="Path_332" d="M8 5v37.572l29.521-18.786z" class="cls-2" data-name="Path 332" transform="translate(13.47 8.418)"/>
+            <path id="Path_333" d="M0 0h64.409v64.409H0z" class="cls-3" data-name="Path 333"/>
+        </g>
+    </g>
+</svg>

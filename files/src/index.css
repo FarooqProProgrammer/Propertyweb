@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card-type {
+  background-color: white !important;
+}
+a {
+  text-decoration: none !important;
+}
+.container-with-dots {
+  position: relative;
+}
+
+.carousel__item {
+  flex-grow: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.carousel__image {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__button-group {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.carousel__button-prev,
+.carousel__button-next {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+ 
+}
+
+/* ---------- CAROUSEL CSS ------------------------- */
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 0px violet;
+}
+.carousel-btn {
+  margin-top: 100px !important;
+  height: 90px !important;
+  background-color: #fff !important;
+  width: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid #a8a8a8 !important;
+}
+.rec{
+  gap: 4px !important;
+}
+
+
+/* ----------------------- FLAG ----------------------------------- */
+/* ----------------------- POHNE TEL ----------------------------------- */
+.arrow {
+  display:none !important;
+}
+.i  {
+  color: #5018ff !important;
+}
+/* ----------------------- POHNE TEL ----------------------------------- */
+
+.quill {
+  height:200px !important;
+  background-color: #fff;
+}

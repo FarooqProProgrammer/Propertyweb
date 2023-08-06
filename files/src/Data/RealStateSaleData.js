@@ -1,0 +1,12 @@
+export const RealSateSaleData = [
+    {
+        title:'Looking to retire overseas - where should you buy your retirement home in Turkey?',
+        Description:' When considering a permanent move abroad and buying a property&nbsp;for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are&nbsp;some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at Turkish real estate with a view to permanent living in Turkey, we find&nbsp;that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living.'
+    },
+    
+    {
+        title:'Where to invest in Turkish real estate? &nbsp;',
+        Description:' With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 USA s economic expansion was only second to China. IMF estimates&nbsp;that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. Turkish real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the Turkish real estate industry is fast climbing. Turkish real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property&nbsp;market in USA grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey.'
+    },
+
+]
