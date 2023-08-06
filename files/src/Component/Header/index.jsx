@@ -22,7 +22,7 @@ import HeaderNav from "./HeaderNav";
 import PartnertSvg from "../../assets/partner-button-01.svg";
 import Image from "../../ReUseAbleComponent/Image";
 import Logo from "../../assets/pt-header-logo.svg";
-import PTHEADERLOGO from "../../assets/pt_new_logo.svg";
+import PTHEADERLOGO from "../../assets/pt_new_logo.webp";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
