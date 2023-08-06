@@ -35,9 +35,9 @@ app.post("/payment", cors(), async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "files", "build")));
-  res.sendFile(path.resolve(__dirname, "files", "build", "index.html"));
-});
+// app.get("/", (req, res) => {
+//   app.use(express.static(path.resolve(__dirname, "files", "build")));
+//   res.sendFile(path.resolve(__dirname, "files", "build", "index.html"));
+// });
 
 app.listen(4000, () => console.log("Server listening on PORT 4000"));
