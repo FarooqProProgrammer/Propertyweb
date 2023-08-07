@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5090fe4.css",
-    "main.js": "/static/js/main.67408f95.js",
+    "main.css": "/static/css/main.2e3665e8.css",
+    "main.js": "/static/js/main.cad77bc3.js",
     "static/js/765.50f82f6f.chunk.js": "/static/js/765.50f82f6f.chunk.js",
     "static/media/Feature.jpg": "/static/media/Feature.309af511116035f843a4.jpg",
     "static/media/offices_1.png": "/static/media/offices_1.e9815002854fcfc4171f.png",
@@ -17,7 +17,6 @@
     "static/media/antalya-duden-waterfalls-turkey_1677949063.jpg": "/static/media/antalya-duden-waterfalls-turkey_1677949063.7291d3c2801f9472f6a8.jpg",
     "static/media/virtual_property_tour_in_turkey.jpg": "/static/media/virtual_property_tour_in_turkey.4a68fe464511bdd3d897.jpg",
     "static/media/property_turkey_offices.jpg": "/static/media/property_turkey_offices.482c303a70680800acbc.jpg",
-    "static/media/Screenreplacement@2x.png": "/static/media/Screenreplacement@2x.0c199543a0735d6088a0.png",
     "static/media/fethiye.jpg": "/static/media/fethiye.14749b0e7dfd1aee0086.jpg",
     "static/media/property_in_istanbul_for_sale.jpeg": "/static/media/property_in_istanbul_for_sale.3ba975cb666351c03183.jpeg",
     "static/media/turkish_citizenship_by_investment.jpeg": "/static/media/turkish_citizenship_by_investment.261762b68b7df3e5a0f8.jpeg",
@@ -61,12 +60,12 @@
     "static/media/share-alt-solid.-gold.svg": "/static/media/share-alt-solid.-gold.454c1a0f2bed13988ee5a2ad5c4007f1.svg",
     "static/media/location-gold-filled.svg": "/static/media/location-gold-filled.fbdef2176de9cf9eecb243c805972f8e.svg",
     "static/media/path387.svg": "/static/media/path387.1d8c978e21a6a6e69da218b2db87e89c.svg",
-    "main.f5090fe4.css.map": "/static/css/main.f5090fe4.css.map",
-    "main.67408f95.js.map": "/static/js/main.67408f95.js.map",
+    "main.2e3665e8.css.map": "/static/css/main.2e3665e8.css.map",
+    "main.cad77bc3.js.map": "/static/js/main.cad77bc3.js.map",
     "765.50f82f6f.chunk.js.map": "/static/js/765.50f82f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5090fe4.css",
-    "static/js/main.67408f95.js"
+    "static/css/main.2e3665e8.css",
+    "static/js/main.cad77bc3.js"
   ]
 }
