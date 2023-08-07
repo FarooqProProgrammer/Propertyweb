@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from '../../ReUseAbleComponent/Image'
-import MobilePicture from "../../assets/Screenreplacement@2x.png"
 import AppStore from "../../assets/app-store.png"
 import Playstore from "../../assets/app-store.png"
 import { Link } from 'react-router-dom'

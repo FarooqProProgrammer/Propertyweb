@@ -191,25 +191,25 @@ export default function AboutusGuideTag({ title }) {
                   in:&nbsp;
                 </p>
                 <p>
-                  <Link to={"/aboutus/Bodrum"} title="">
+                  <Link  title="">
                     Bodrum
                   </Link>
                   &nbsp;
                 </p>
                 <p>
-                  <Link to="/aboutus/Kalkan" title="">
+                  <Link  title="">
                     Fethiye &amp; Kalkan
                   </Link>
                   &nbsp;
                 </p>
                 <p>
-                  <Link to="/aboutus/Antalya" title="">
+                  <Link  title="">
                     Antalya
                   </Link>{" "}
                   &nbsp;
                 </p>
                 <p>
-                  <Link to="/aboutus/team" title="">
+                  <Link  title="">
                     Istanbul
                   </Link>
                   &nbsp;
@@ -245,9 +245,10 @@ export default function AboutusGuideTag({ title }) {
                 <p>
                   <br />
                 </p>
-                {AboutDataGuide.map((item) => {
+                {AboutDataGuide.map((item,index) => {
                   return (
                     <DisplayComponent
+                    key={index}
                       title={item.title}
                       Description={item.Description}
                       img={item.img}
