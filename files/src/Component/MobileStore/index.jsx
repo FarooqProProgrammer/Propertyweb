@@ -13,7 +13,7 @@ export default function MobileStore() {
           <Image
             className=" lazyloaded"
             data-src="https://www.propertyturkey.com/front/image/images2019/Images/Screenreplacement@2x.png"
-            src={MobilePicture}
+            src={'https://www.propertyturkey.com/front/image/images2019/Images/Screenreplacement@2x.png'}
           />
         </figure>
         <div className="fl-dis-left fl-tab-left banner-element-first">
