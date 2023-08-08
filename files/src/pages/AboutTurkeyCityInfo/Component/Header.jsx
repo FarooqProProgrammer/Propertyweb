@@ -33,7 +33,7 @@ export default function Header({ data }) {
         <span
 
         >
-          Turkish Mediterranean Region
+          USA Mediterranean Region
         </span>
       </div>
     </div>

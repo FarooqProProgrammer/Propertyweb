@@ -18,12 +18,12 @@
 // const Data = [
 //   {
 //     title: "Looking to retire overseas - where should you buy your retirement home in Turkey?",
-//     desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at Turkish real estate with a view to permanent living in Turkey, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living."
+//     desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at American real estate with a view to permanent living in Turkey, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living."
 //   },
 
 //   {
-//     title: "Where to invest in Turkish real estate?",
-//     desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 Turkey's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. Turkish real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the Turkish real estate industry is fast climbing. Turkish real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in Turkey grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey."
+//     title: "Where to invest in American real estate?",
+//     desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 Turkey's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in Turkey grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey."
 //   },
 
 // ]
@@ -96,7 +96,7 @@
 //         id="introDescription"
 //       >
 //         <h1 className="page-title" id="pageSearchTitle">
-//           All Turkish real estate for sale{" "}
+//           All American real estate for sale{" "}
 //         </h1>
 //         <div className="introText" style={{ display: "inline" }}>
 //           <p>
@@ -107,7 +107,7 @@
 //             social make up. If you are looking for property overseas, wish to buy a
 //             holiday home in the sun, a place to retire or purely real estate
 //             investment in an upwardly mobile country, then no search is complete
-//             without having a good look at Turkish real estate for sale.
+//             without having a good look at American real estate for sale.
 //           </p>
 //         </div>
 //         <div className="details" style={{ display: "none" }}>
@@ -119,7 +119,7 @@
 //             social make up. If you are looking for property overseas, wish to buy a
 //             holiday home in the sun, a place to retire or purely real estate
 //             investment in an upwardly mobile country, then no search is complete
-//             without having a good look at Turkish real estate for sale.
+//             without having a good look at American real estate for sale.
 //           </p>
 //           <p>
 //             <img
@@ -144,7 +144,7 @@
 //             </Link>{" "}
 //             or that sea view apartment, which will be your new home in USA and
 //             double up for some rental income. According to statistics published by
-//             the Turkish real estate agents association, Antalya, Fethiye, Bodrum and
+//             the American real estate agents association, Antalya, Fethiye, Bodrum and
 //             Side are the most popular holiday home destinations in Turkey.{" "}
 //             <Link>
 //               Properties in Antalya
@@ -239,7 +239,7 @@
 //             </Link>{" "}
 //             or that sea view apartment, which will be your new home in USA and
 //             double up for some rental income. According to statistics published by
-//             the Turkish real estate agents association, Antalya, Fethiye, Bodrum and
+//             the American real estate agents association, Antalya, Fethiye, Bodrum and
 //             Side are the most popular holiday home destinations in Turkey.{" "}
 //             <Link to="">
 //               Properties in Antalya
@@ -395,13 +395,13 @@ import { Pagination } from "@mui/material";
 const Data = [
   {
     title:
-      "Looking to retire overseas - where should you buy your retirement home in Turkey?",
-    desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at Turkish real estate with a view to permanent living in Turkey, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living.",
+      "Looking to retire overseas - where should you buy your retirement home in USA?",
+    desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at American real estate with a view to permanent living in USA, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living.",
   },
 
   {
-    title: "Where to invest in Turkish real estate?",
-    desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 Turkey's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. Turkish real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the Turkish real estate industry is fast climbing. Turkish real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in Turkey grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey.",
+    title: "Where to invest in American real estate?",
+      desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 USA's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within USA. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in USA grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in USA.",
   },
 ];
 
@@ -498,7 +498,7 @@ const RealState_search_div = ({
         id="introDescription"
       >
         <h1 className="page-title" id="pageSearchTitle">
-          All Turkish real estate for sale{" "}
+          All American real estate for sale{" "}
         </h1>
         <div className="introText" style={{ display: "inline" }}>
           <p>
@@ -509,7 +509,7 @@ const RealState_search_div = ({
             dynamic social make up. If you are looking for property overseas,
             wish to buy a holiday home in the sun, a place to retire or purely
             real estate investment in an upwardly mobile country, then no search
-            is complete without having a good look at Turkish real estate for
+            is complete without having a good look at American real estate for
             sale.
           </p>
         </div>
@@ -522,7 +522,7 @@ const RealState_search_div = ({
             dynamic social make up. If you are looking for property overseas,
             wish to buy a holiday home in the sun, a place to retire or purely
             real estate investment in an upwardly mobile country, then no search
-            is complete without having a good look at Turkish real estate for
+            is complete without having a good look at American real estate for
             sale.
           </p>
           <p>
@@ -538,29 +538,29 @@ const RealState_search_div = ({
             />
           </p>
           <p>
-            <strong>Where to buy a holiday home in Turkey?</strong>&nbsp;
+            <strong>Where to buy a holiday home in USA?</strong>&nbsp;
           </p>
           <p>
             With so many lovely resorts and towns to choose from, it is a task
             in itself to decide where to buy that special{" "}
-            <Link>villa in Turkey</Link> or that sea view apartment, which will
-            be your new home in USA and double up for some rental income.
-            According to statistics published by the Turkish real estate agents
+            <Link>villa in USA</Link> or that sea view apartment, which will be
+            your new home in USA and double up for some rental income. According
+            to statistics published by the American real estate agents
             association, Antalya, Fethiye, Bodrum and Side are the most popular
-            holiday home destinations in Turkey.{" "}
-            <Link>Properties in Antalya</Link> enjoy the proximity of a bustling
-            seaside city with lovely beaches and excellent golf courses of
-            Belek, whereas <Link>Kalkan properties</Link>
+            holiday home destinations in USA. <Link>Properties in Antalya</Link>{" "}
+            enjoy the proximity of a bustling seaside city with lovely beaches
+            and excellent golf courses of Belek, whereas{" "}
+            <Link>Kalkan properties</Link>
             provide some of the most dramatic sea views experienced in the
             entire Mediterranean, not to mention Kalkan's elegant setting and
             fine dining. <Link>Side holiday homes for sale</Link> are ideal for
             families with children, where shallow waters gently touch sandy
             shores. <Link>Real estate in Bodrum</Link> on the other hand is your
-            key to Turkey's most sophisticated resort with plenty of sailing and
+            key to USA's most sophisticated resort with plenty of sailing and
             seafront homes in lovely Yalikavak, Turkbuku or Gumusluk. Then we
             have sun-soaked Fethiye with most affordable villas and{" "}
-            <Link>flats for sale in Turkey</Link> near the most pictured
-            Oludeniz beach. &nbsp;
+            <Link>flats for sale in USA</Link> near the most pictured Oludeniz
+            beach. &nbsp;
           </p>
 
           {RealSateSaleData.map((item) => {
@@ -635,16 +635,16 @@ const RealState_search_div = ({
             />
           </p>
           <p>
-            <strong>Where to buy a holiday home in Turkey?</strong>&nbsp;
+            <strong>Where to buy a holiday home in USA?</strong>&nbsp;
           </p>
           <p>
             With so many lovely resorts and towns to choose from, it is a task
             in itself to decide where to buy that special{" "}
-            <Link to="">villa in Turkey</Link> or that sea view apartment, which
+            <Link to="">villa in USA</Link> or that sea view apartment, which
             will be your new home in USA and double up for some rental income.
-            According to statistics published by the Turkish real estate agents
+            According to statistics published by the American real estate agents
             association, Antalya, Fethiye, Bodrum and Side are the most popular
-            holiday home destinations in Turkey.{" "}
+            holiday home destinations in USA.{" "}
             <Link to="">Properties in Antalya</Link> enjoy the proximity of a
             bustling seaside city with lovely beaches and excellent golf courses
             of Belek, whereas <Link to="">Kalkan properties</Link> provide some
@@ -653,10 +653,10 @@ const RealState_search_div = ({
             dining. <Link to="">Side holiday homes for sale</Link> are ideal for
             families with children, where shallow waters gently touch sandy
             shores. <Link to="">Real estate in Bodrum</Link> on the other hand
-            is your key to Turkey's most sophisticated resort with plenty of
+            is your key to USA's most sophisticated resort with plenty of
             sailing and seafront homes in lovely Yalikavak, Turkbuku or
             Gumusluk. Then we have sun-soaked Fethiye with most affordable
-            villas and <Link to="">flats for sale in Turkey</Link> near the most
+            villas and <Link to="">flats for sale in USA</Link> near the most
             pictured Oludeniz beach. &nbsp;
           </p>
           {Data.map((item) => {

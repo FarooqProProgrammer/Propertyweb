@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from '../../ReUseAbleComponent/Image'
+import MobilePicture from "../../assets/Screenreplacement@2x.png"
 import AppStore from "../../assets/app-store.png"
 import Playstore from "../../assets/app-store.png"
 import { Link } from 'react-router-dom'
@@ -12,7 +13,7 @@ export default function MobileStore() {
           <Image
             className=" lazyloaded"
             data-src="https://www.propertyturkey.com/front/image/images2019/Images/Screenreplacement@2x.png"
-            src={'./images/Screenreplacement@2x.png'}
+            src={MobilePicture}
           />
         </figure>
         <div className="fl-dis-left fl-tab-left banner-element-first">

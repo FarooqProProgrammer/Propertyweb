@@ -10264,10 +10264,8 @@ body.compensate-for-scrollbar {
   background: #fff;
   display: inline-block;
   margin: 0;
-  max-width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 44px;
+  width: 100%;
+  padding: 15px 44px;
   position: relative;
   text-align: left;
   vertical-align: middle
@@ -16758,7 +16756,7 @@ header .main-header .burgermenu {
     display: none;
     position: absolute;
     top: 0;
-    left: 65%;
+    left: 10%;
     width: 105%;
     background: #fff;
     z-index: 9;
@@ -16828,7 +16826,7 @@ header .main-header .burgermenu {
   position: relative
 }
 
-.register-form h3::after {
+/* .register-form h3::after {
   content: '';
   width: 86px;
   height: 3px;
@@ -16839,7 +16837,7 @@ header .main-header .burgermenu {
   left: 0;
   bottom: 0;
   margin: auto
-}
+} */
 
 .register-form form .form-field {
   padding: 0.3rem 0
@@ -16994,7 +16992,6 @@ header .main-header .burgermenu {
   display: inline-block;
   height: 100%;
   max-height: 538px;
-  overflow-y: scroll;
   overflow-x: hidden
 }
 
@@ -18702,7 +18699,7 @@ body.property-endpage.real_estate #search-filter {
   z-index: 999;
   min-width: 25rem;
   font-size: 1rem;
-  top: calc(100% + 1rem);
+  top: 100%;
   left: 0;
   box-shadow: -5px 20px 25px rgba(0, 0, 0, 0.22);
   transform: perspective(300px) rotate3d(1, 0, 0, -90deg);
@@ -18777,7 +18774,7 @@ body.property-endpage.real_estate #search-filter {
 }
 
 .hideRefId .search-filter-input-city {
-  width: 40% !important;
+  min-width: 40% !important;
   padding: 0px 5.5rem 0 2.5rem !important
 }
 

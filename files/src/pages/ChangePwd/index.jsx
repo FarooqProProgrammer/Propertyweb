@@ -129,12 +129,12 @@ export default function ChangePwd() {
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Who Can Buy Property in Turkey
+              <i className="fa fa-angle-right" /> Who Can Buy Property in USA
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> How to buy property in Turkey
+              <i className="fa fa-angle-right" /> How to buy property in USA
             </a>
           </li>
           <li>
@@ -152,7 +152,7 @@ export default function ChangePwd() {
           <li>
             <a href="#" className="no-wrap">
               <i className="fa fa-angle-right" /> Costs of Purchasing a Property
-              in Turkey
+              in USA
             </a>
           </li>
           <li>
@@ -163,23 +163,23 @@ export default function ChangePwd() {
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Finance for property in Turkey
+              <i className="fa fa-angle-right" /> Finance for property in USA
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
               <i className="fa fa-angle-right" /> Should I use a solicitor to
-              buy property in Turkey
+              buy property in USA
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Power of Attorney in Turkey
+              <i className="fa fa-angle-right" /> Power of Attorney in USA
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Buying property in Turkey
+              <i className="fa fa-angle-right" /> Buying property in USA
               through a company
             </a>
           </li>

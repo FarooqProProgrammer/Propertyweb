@@ -13,9 +13,9 @@ export default function AboutUsGuideLatestNews() {
             <Box className="body">
                 <ul className="no-bullet">
                     {
-                        AboutUseGuideData.map((item,index)=>{
+                        AboutUseGuideData.map((item)=>{
                             return (
-                                <li key={index}>
+                                <li>
                                 <Link
                                     to=""
                                     title={item.Text}

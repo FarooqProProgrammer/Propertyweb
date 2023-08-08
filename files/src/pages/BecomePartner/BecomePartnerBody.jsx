@@ -1,7 +1,7 @@
-import React from 'react'
-import PhoneComponent from "../../ReUseAbleComponent/PhoneComponent"
-import { Link } from 'react-router-dom'
-import {BsFillMapFill} from "react-icons/bs"
+import React from "react";
+import PhoneComponent from "../../ReUseAbleComponent/PhoneComponent";
+import { Link } from "react-router-dom";
+import { BsFillMapFill } from "react-icons/bs";
 
 export default function BecomePartnerBody() {
   return (
@@ -9,14 +9,10 @@ export default function BecomePartnerBody() {
       <section className="col-dis-8 col-tab-8 col-mob-12 fl-dis-right fl-tab-right">
         <form
           method="POST"
-          
           acceptCharset="UTF-8"
           className="box white becomepartner-form"
         >
-          <input
-            name="_token"
-            type="hidden"
-          />
+          <input name="_token" type="hidden" />
           <h1 className="title text-center clr-pt-darkgrey abhaya">
             FILL THE FOLLOWING FORM
           </h1>
@@ -70,10 +66,10 @@ export default function BecomePartnerBody() {
                   <label className="field">
                     <b>Phone Number</b>
                     <PhoneComponent
-                                containerClassName="intl-tel-input"
-                                inputClassName="form-control"
-                                defaultCountry={'pk'}
-                            />
+                      containerClassName="intl-tel-input"
+                      inputClassName="form-control"
+                      defaultCountry={"pk"}
+                    />
                   </label>
                 </div>
                 <div className="col-12 col-md-6">
@@ -189,8 +185,8 @@ export default function BecomePartnerBody() {
                     <div id="div-3" className="showhide-3-4">
                       <label className="field">
                         <b>
-                          How many years have you been in the real estate bussiness
-                          ?
+                          How many years have you been in the real estate
+                          bussiness ?
                         </b>
                         <input
                           name="years_of_exp_in_realestate"
@@ -284,7 +280,8 @@ export default function BecomePartnerBody() {
                 <div id="div-6" className="showhide-5-6" />
                 <div className="col-12">
                   <label className="flex items-base flex-col-sm">
-                    Do you currently have any partnership with any Turkish company ?
+                    Do you currently have any partnership with any American
+                    company ?
                     <label className="container-checkbox margin-hrz-3">
                       Yes
                       <input
@@ -397,13 +394,10 @@ export default function BecomePartnerBody() {
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'>
+          <b className="flex gap-1">
             Property USA UK Head Office
-            <Link
-              href=""
-              title="Property USA UK Head Office"
-            >
-              <BsFillMapFill color={'#5018ff'}/>
+            <Link href="" title="Property USA UK Head Office">
+              <BsFillMapFill color={"#5018ff"} />
             </Link>
           </b>
           <label>Highstone House,</label>
@@ -419,16 +413,16 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>info@propertyturkey.com</a>
+              <a>info@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'>
+          <b className="flex gap-1">
             Property USA Istanbul Head Office
             <a>
-              <BsFillMapFill color={'#5018ff'}/>
+              <BsFillMapFill color={"#5018ff"} />
             </a>
           </b>
           <label>Halide Edip Adivar Mahallesi,</label>
@@ -444,16 +438,16 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>info@propertyturkey.com</a>
+              <a>info@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'> 
+          <b className="flex gap-1">
             Property USA Bodrum Office
             <a>
-              <BsFillMapFill color={'#5018ff'}/>
+              <BsFillMapFill color={"#5018ff"} />
             </a>
           </b>
           <label>156A Neyzen Tevfik Caddesi,</label>
@@ -467,18 +461,16 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>
-                bodrum@propertyturkey.com
-              </a>
+              <a>bodrum@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'>
+          <b className="flex gap-1">
             Property USA Fethiye - Kalkan Office
             <a>
-              <BsFillMapFill color={'#5018ff'}/>
+              <BsFillMapFill color={"#5018ff"} />
             </a>
           </b>
           <label>Tuzla Mahallesi Cahit Gündüz Caddesi</label>
@@ -492,18 +484,16 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>
-                fethiye@propertyturkey.com
-              </a>
+              <a>fethiye@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'>
+          <b className="flex gap-1">
             Property USA Antalya Office
             <a>
-             <BsFillMapFill color={'#5018ff'}/>
+              <BsFillMapFill color={"#5018ff"} />
             </a>
           </b>
           <label>Gürsu Mahallesi 318. Sok, No:10 / 4 Konyaalti, ANTALYA</label>
@@ -516,23 +506,21 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>
-                antalya@propertyturkey.com
-              </a>
+              <a>antalya@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
-          <b className='flex gap-1'>
+          <b className="flex gap-1">
             Property USA Bursa Office
             <a>
-               <BsFillMapFill color={'#5018ff'}/>
+              <BsFillMapFill color={"#5018ff"} />
             </a>
           </b>
           <label>
-            Odunluk Mah. Liman Caddesi Kızılay Plaza No :17 Ofis No: 50 Nilüfer /
-            BURSA
+            Odunluk Mah. Liman Caddesi Kızılay Plaza No :17 Ofis No: 50 Nilüfer
+            / BURSA
           </label>
           <label>
             Telephone:{" "}
@@ -543,7 +531,7 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>bursa@propertyturkey.com</a>
+              <a>bursa@propertyAmerican.com</a>
             </b>
           </label>
         </div>
@@ -560,16 +548,16 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>
-                pakistan@propertyturkey.com
-              </a>
+              <a>pakistan@propertyAmerican.com</a>
             </b>
           </label>
         </div>
         <hr />
         <div className="officelocation">
           <b>Property USA South Africa</b>
-          <label>28 Osborn Road, Houghton, 2192, Johannesburg, South Africa.</label>
+          <label>
+            28 Osborn Road, Houghton, 2192, Johannesburg, South Africa.
+          </label>
           <label>
             Telephone:{" "}
             <b className="red" dir="ltr">
@@ -585,7 +573,7 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>sa@propertyturkey.com</a>
+              <a>sa@propertyAmerican.com</a>
             </b>
           </label>
         </div>
@@ -603,7 +591,7 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>india@propertyturkey.com</a>
+              <a>india@propertyAmerican.com</a>
             </b>
           </label>
         </div>
@@ -623,15 +611,12 @@ export default function BecomePartnerBody() {
           <label>
             E-mail:{" "}
             <b className="red">
-              <a>
-                Persian@propertyturkey.com
-              </a>
+              <a>Persian@propertyturkey.com</a>
             </b>
           </label>
         </div>
         <hr />
       </aside>
     </div>
-
-  )
+  );
 }

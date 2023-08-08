@@ -29,14 +29,20 @@ import useFirestoreQuery from "../../Hooks/useFirestoreQuery";
 export default function About_Turkey__Tag() {
   const [toggleMedditerrian, settoggleMedditerrian] = useState(false);
   const [toggleAegean, settoggleAegean] = useState(false);
+  const [toggleMarmara, settoggleMarmara] = useState(false);
+  const [toggleLycian, settoggleLycian] = useState(false);
+  const [toggleTurquoise, settoggleTurquoise] = useState(false);
+  const [toggleBlackSea, settoggleBlackSea] = useState(false);
+  const [toggleAirports, settoggleAirports] = useState(false);
+  const [toggleWeather, settoggleWeather] = useState(false);
   const [HandleContent, setHandleContents] = useState([]);
   const [ReadContent, setReadContent] = useState([]);
   const [MarmaraRegion, setMarmaraRegion] = useState([]);
   const [SenFransico, setSenFransico] = useState([]);
 
-  
+  const [data, setData] = useState([]);
 
-  
+  const { UsaData, isLoading } = useFirestoreQuery("/RegionsInfo");
 
   const HandleFetchData = () => {
     const q = query(
@@ -147,7 +153,7 @@ export default function About_Turkey__Tag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Turkish Mediterranean Region">
+                      <Link title="American Mediterranean Region">
                         About Sen Francisco Culture
                       </Link>
                     </li>
@@ -166,7 +172,17 @@ export default function About_Turkey__Tag() {
                         About Sen Francisco Geography
                       </Link>
                     </li>
- 
+                    {/* {
+                                            ReadContent.map((item) => {
+                                                return (
+                                                    <li className="">
+                                                        <Link title="About Alanya" to={`/${item.id}`}>
+                                                            {item.link}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        } */}
                   </ul>
                 </Box>
                 <Box className="padding-top-2 side-item">
@@ -218,6 +234,18 @@ export default function About_Turkey__Tag() {
                     <li className="">
                       <Link title="California Culture">California Culture</Link>
                     </li>
+
+                    {/* {
+                                            HandleContent.map((item) => {
+                                                return (
+                                                    <li className="">
+                                                        <Link title="American Aegean region" to={`/${item.id}`}>
+                                                            {item.link}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        } */}
                   </ul>
                 </Box>
               </Box>

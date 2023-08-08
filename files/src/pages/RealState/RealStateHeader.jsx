@@ -75,6 +75,7 @@ export default function RealStateHeader({
 
   const HandleOpenLocation = () => {
     setOpenLocation(!openLocation);
+
     setOpenopenType(false);
     setOpenPrice(false);
     setopenBedroom(false);
@@ -197,6 +198,8 @@ export default function RealStateHeader({
               } search-filter-input search-filter-input-city originValue cursor-pointer`}
               linktype="location"
               onClick={HandleOpenLocation}
+              onMouseLeave={() => setOpenLocation(false)}
+              
             >
               <Image className="search-icon" src={LocationGold} />
               <div className="filter-type-dropdown-wrap">
@@ -234,11 +237,12 @@ export default function RealStateHeader({
                 >
                   City
                 </p>
-                <p className="absolute -bottom-2">{cityData}</p>
+                <p className="absolute -bottom-2" style={{fontSize: '12px'}}>{cityData}</p>
                 {cityData && (
                   <RxCross2
                     onClick={HandlecloseCity}
                     color={"#5018ff"}
+                    style={{fontSize: '13px', marginTop: '-4px'}}
                     className="absolute right-2 top-3  text-2xl font-black"
                   />
                 )}
@@ -269,6 +273,7 @@ export default function RealStateHeader({
             {/*----------------------------------------------T Y P E S---------------------------------------------------------*/}
             <div
               onClick={HandleOpenType}
+              onMouseLeave={() => setOpenopenType(false)}
               className={` ${
                 openType ? "open" : ""
               } search-filter-input originValue cursor-pointer`}
@@ -354,6 +359,7 @@ export default function RealStateHeader({
               <span
                 className="search-filter-input-title relative"
                 onClick={HandlePriceToggle}
+                onMouseLeave={() => setOpenPrice(false)}
               >
                 <p
                   className={`absolute ${
@@ -746,6 +752,7 @@ export default function RealStateHeader({
               linktype="bedrooms"
               id="bedroom-toggle"
               onClick={HandleBedroomToggle}
+              onMouseLeave={() => setopenBedroom(false)}
             >
               <Image
                 className="search-icon showMb-hideDt"
@@ -1063,6 +1070,7 @@ export default function RealStateHeader({
               linktype="bedrooms"
               id="bedroom-toggle"
               onClick={HandleZip}
+              onMouseLeave={() => setHandleZipCode(false)}
             >
               <Image
                 className="search-icon showMb-hideDt"

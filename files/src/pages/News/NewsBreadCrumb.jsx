@@ -5,17 +5,17 @@ const NewsBreadCrumb = () => {
         <div className="tv-endpage text-center">
   <div className="container">
     <h1 className="padding-bottom-2">
-      Property Turkey <span className='bg-transparent'>Blog</span>
+      Property USA <span className='bg-transparent'>Blog</span>
     </h1>
     <div className="continue-reading">
       <p>
-        Property Turkey's blog is designed to give you an insight into all
-        things Turkish, including tips about life in Turkey, Turkish culture,
+        Property USA's blog is designed to give you an insight into all
+        things American, including tips about life in USA, American culture,
         economic &amp; political matters and how to get the best out of your
         home and investment. Showcasing many case studies of those who invested
-        and/or moved to Turkey and integrated into the Turkish lifestyle, this
+        and/or moved to USA and integrated into the American lifestyle, this
         blog is your informative guide for all you need to know about making the
-        big move overseas to Turkey.&nbsp;
+        big move overseas to USA.&nbsp;
       </p>
       <p>
         <br />
@@ -24,7 +24,7 @@ const NewsBreadCrumb = () => {
         Focusing on the main hotspots of Bodrum, Antalya, Fethiye, Kalkan,
         Istanbul, Kas, Side, and more - you can expect us to blog weekly about
         the latest trends, case studies and news coming out of the top cities in
-        Turkey. Also expect several investment tips and hot tips for real estate
+        USA. Also expect several investment tips and hot tips for real estate
         and properties that are hot and ready to sell now.&nbsp;
       </p>
     </div>
@@ -42,12 +42,12 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  life in turkey
+                  life in USA
                 </a>
               </li>
               <li>
                 <a>
-                  tourism in turkey
+                  tourism in USA
                 </a>
               </li>
               <li>
@@ -57,7 +57,7 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  moving to turkey
+                  moving to USA
                 </a>
               </li>
               <li>
@@ -102,17 +102,17 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  retiring to turkey
+                  retiring to USA
                 </a>
               </li>
               <li>
                 <a>
-                  turkish cuisine
+                  American cuisine
                 </a>
               </li>
               <li>
                 <a>
-                  Turkish history
+                  American history
                 </a>
               </li>
               <li>
@@ -127,12 +127,12 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  invest in Turkey
+                  invest in USA
                 </a>
               </li>
               <li>
                 <a>
-                  turkish economy
+                  American economy
                 </a>
               </li>
             </ul>

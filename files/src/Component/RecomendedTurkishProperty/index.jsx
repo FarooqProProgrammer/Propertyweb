@@ -28,6 +28,10 @@ import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import useProperties from "../../Hooks/useProperties";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import KingBedOutlinedIcon from "@mui/icons-material/KingBedOutlined";
+import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const responsive = {
   superLargeDesktop: {
@@ -68,6 +72,7 @@ export default function RecomendedTurkishProperty() {
 
   const [data, setData] = useState("California");
   const [isOpen, setIsOpen] = useState(false);
+  console.log({ user });
 
   const closeModal = () => {
     setIsOpen(false);
@@ -91,12 +96,17 @@ export default function RecomendedTurkishProperty() {
 
   const HandleSubmitEnquiryForm = async (e) => {
     e.preventDefault();
-    console.log(CarouselID);
-    console.log(user.login.uid);
-    console.log(Name);
-    console.log(Phone);
-    console.log(Email);
-    console.log(Description);
+    console.log({
+      propertyID: CarouselID,
+      id: user.login.uid,
+      name: Name,
+      phone: Phone,
+      Email: Email,
+      desc: Description,
+      purpose: property,
+      Deal: "pending",
+      // Active: Active,
+    });
 
     const docRef = await addDoc(collection(db, "EnquiryForm"), {
       propertyID: CarouselID,
@@ -107,7 +117,7 @@ export default function RecomendedTurkishProperty() {
       desc: Description,
       purpose: property,
       Deal: "pending",
-      Active: Active,
+      // Active: Active,
     });
     console.log("Document written with ID: ", docRef.id);
   };
@@ -130,7 +140,7 @@ export default function RecomendedTurkishProperty() {
         >
           <h1 className="title-lined abhaya">
             <Box className="font-small-29">
-              <b>Today</b>'s Recommended Turkish Properties
+              <b>Recommended</b> Properties in USA
             </Box>
           </h1>
           <Box className="section--filter-wrapper">
@@ -212,24 +222,9 @@ export default function RecomendedTurkishProperty() {
                             href="#logins2"
                             data-id={6199}
                           >
-                            <span className="flex">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20.189"
-                                height="18.465"
-                                viewBox="0 0 20.189 18.465"
-                              >
-                                <path
-                                  id="Heart"
-                                  d="M16.76,1.479a4.887,4.887,0,0,0-6.956,0l-.684.684-.684-.684A4.919,4.919,0,0,0,1.479,8.435l7.64,7.64,7.64-7.64a4.887,4.887,0,0,0,0-6.956"
-                                  transform="translate(0.975 0.975)"
-                                  fill="none"
-                                  stroke="#fff"
-                                  strokeWidth={2}
-                                  fillRule="evenodd"
-                                />
-                              </svg>
-                            </span>
+                            <FavoriteBorderOutlinedIcon
+                              sx={{ color: "white" }}
+                            />
                           </Link>
                         </>
                       )}
@@ -271,22 +266,14 @@ export default function RecomendedTurkishProperty() {
                       </Link>
                       <Box className="features skelton-loading">
                         <Box className="location">
-                          <img
-                            alt="pic 08"
-                            className="icon-location img-fluid"
-                            src={LocationSvg}
-                          />
+                          <LocationOnOutlinedIcon sx={{ color: "#5081ff" }} />
                           <span className="quantity">
                             {item.property_Location}
                           </span>
                         </Box>
                         <Box className="bedrooms flex content-space-evenly">
                           <Box>
-                            <Image
-                              alt="pic 03"
-                              className="icon-bedroom img-fluid"
-                              src={BedroomsIcon}
-                            />
+                            <KingBedOutlinedIcon sx={{ color: "#5081ff" }} />
                           </Box>
                           <Box>
                             <span className="quantity">
@@ -339,11 +326,7 @@ export default function RecomendedTurkishProperty() {
                         </Box> */}
                         <Box className="bathrooms flex content-space-evenly padding-left-05">
                           <Box>
-                            <Image
-                              alt="pic 04"
-                              className="icon-bathrooms img-fluid"
-                              src={BathroomSvg}
-                            />
+                            <BathtubOutlinedIcon sx={{ color: "#5081ff" }} />
                           </Box>
                           <Box>
                             <span className="quantity">
@@ -402,99 +385,118 @@ export default function RecomendedTurkishProperty() {
         <Box
           className="form_popup newcolor fancybox-content"
           id="data"
-          style={{ display: "inline-block" }}
+          style={{
+            display: "inline-block",
+            borderRadius: "6px",
+            boxShadow:
+              "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+          }}
         >
-          <form
-            onSubmit={HandleSubmitEnquiryForm}
-            className="box white clearfix"
-          >
-            <h3 className="title col-dis-12 col-tab-12 col-mob-12">
-              Property Enquiry
-            </h3>
-            <Box grid="">
-              <Box className="col-dis-12 col-tab-12 col-mob-12">
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
-                  <input
-                    name="first_name"
-                    type="text"
-                    placeholder="your name *"
-                    defaultValue=""
-                    validation=""
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </label>
-                <Box className="field col-dis-12 col-tab-6 col-mob-12">
-                  <IntlTelInput
-                    containerClassName="intl-tel-input"
-                    inputClassName="form-control"
-                    onPhoneNumberChange={handlePhoneInputChange}
-                    defaultCountry={"us"}
-                  />
+          {user.login ? (
+            <>
+              <form
+                onSubmit={HandleSubmitEnquiryForm}
+                className="box white clearfix"
+              >
+                <h3 className="title col-dis-12 col-tab-12 col-mob-12">
+                  Property Enquiry
+                </h3>
+                <Box grid="">
+                  <Box className="col-dis-12 col-tab-12 col-mob-12">
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="first_name"
+                        type="text"
+                        placeholder="your name *"
+                        defaultValue=""
+                        validation=""
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </label>
+                    <Box className="field col-dis-12 col-tab-6 col-mob-12">
+                      <IntlTelInput
+                        containerClassName="intl-tel-input"
+                        inputClassName="form-control"
+                        onPhoneNumberChange={handlePhoneInputChange}
+                        defaultCountry={"us"}
+                      />
+                    </Box>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="email"
+                        type="text"
+                        placeholder="E-mail"
+                        defaultValue=""
+                        validation="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        type="text"
+                        placeholder="For Purpose Rent | Buy"
+                        defaultValue=""
+                        onChange={(e) => setForPropertyStatus(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-12 col-mob-12">
+                      <textarea
+                        name="msg"
+                        placeholder="Message"
+                        defaultValue={"I'm interested in this property"}
+                        onChange={(e) => setDescription(e.target.value)}
+                      />
+                    </label>
+                  </Box>
                 </Box>
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
+                <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
+                  <input name="requestUrl" type="hidden" />
                   <input
-                    name="email"
-                    type="text"
-                    placeholder="E-mail"
-                    defaultValue=""
-                    validation="email"
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="hidden"
+                    id="propertyID"
+                    defaultValue={6173}
+                    name="propertyID[]"
                   />
-                </label>
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
                   <input
                     type="text"
-                    placeholder="For Purpose Rent | Buy"
+                    style={{ display: "none" }}
+                    name="enqID"
                     defaultValue=""
-                    onChange={(e) => setForPropertyStatus(e.target.value)}
                   />
-                </label>
-                <label className="field col-dis-12 col-tab-12 col-mob-12">
-                  <textarea
-                    name="msg"
-                    placeholder="Message"
-                    defaultValue={"I'm interested in this property"}
-                    onChange={(e) => setDescription(e.target.value)}
+                  <StyledButton
+                    title={"Submit"}
+                    width="80%"
+                    size="small"
+                    type={"submit"}
                   />
-                </label>
-              </Box>
-            </Box>
-            <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
-              <input name="requestUrl" type="hidden" />
-              <input
-                type="hidden"
-                id="propertyID"
-                defaultValue={6173}
-                name="propertyID[]"
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="enqID"
-                defaultValue=""
-              />
-              <input
+                  {/* <input
                 type="submit"
                 defaultValue="Send"
                 className=" bg-[#5081ff] px-3 text-white rounded-md py-2"
                 onclick=""
-              />
-            </Box>
-          </form>{" "}
-          <button
-            type="button"
-            data-fancybox-close=""
-            className="fancybox-button fancybox-close-small"
-            title="Close"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version={1}
-              viewBox="0 0 24 24"
-            >
-              <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
-            </svg>
-          </button>
+              /> */}
+                </Box>
+              </form>
+              <button
+                type="button"
+                data-fancybox-close=""
+                className="fancybox-button fancybox-close-small"
+                title="Close"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version={1}
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
+                </svg>
+              </button>
+            </>
+          ) : (
+            <Typography variant="h6">
+              Please login to access enquiries!
+            </Typography>
+          )}
         </Box>
       </ModalComponent>
     </>

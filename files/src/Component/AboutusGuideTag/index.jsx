@@ -137,13 +137,17 @@ export default function AboutusGuideTag({ title }) {
                     contentEditable="false"
                     draggable="true"
                   >
-                    <iframe
+                    <img
+                      src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+                      style={{ height: "40vh" }}
+                    />
+                    {/* <iframe
                       src="https://www.youtube.com/embed/preRes-n9Ew"
                       title="YouTube video player"
                       frameBorder={0}
                       allowFullScreen=""
                       style={{ width: "100%", height: 550 }}
-                    />
+                    /> */}
                   </Typography>
                 </p>
                 <h4>
@@ -184,32 +188,32 @@ export default function AboutusGuideTag({ title }) {
                   <strong>The Property USA Difference</strong>
                 </h2>
                 <p>
-                  With 20+ years experience in the Turkish real estate market,
+                  With 20+ years experience in the American real estate market,
                   team Property USA are your experienced, friendly, and
                   independent overseas real estate consultants. Our head office
                   is located in London, UK with regional operational offices
                   in:&nbsp;
                 </p>
                 <p>
-                  <Link  title="">
+                  <Link to={"/aboutus/Bodrum"} title="">
                     Bodrum
                   </Link>
                   &nbsp;
                 </p>
                 <p>
-                  <Link  title="">
+                  <Link to="/aboutus/Kalkan" title="">
                     Fethiye &amp; Kalkan
                   </Link>
                   &nbsp;
                 </p>
                 <p>
-                  <Link  title="">
+                  <Link to="/aboutus/Antalya" title="">
                     Antalya
                   </Link>{" "}
                   &nbsp;
                 </p>
                 <p>
-                  <Link  title="">
+                  <Link to="/aboutus/team" title="">
                     Istanbul
                   </Link>
                   &nbsp;
@@ -234,9 +238,9 @@ export default function AboutusGuideTag({ title }) {
                   <strong>Industry Leaders</strong>
                 </h2>
                 <p>
-                  In the crowded field of Turkish investment and property,
+                  In the crowded field of American investment and property,
                   Property USA stands head and shoulders above the rest. Our
-                  success in Turkish real estate and investment over the past
+                  success in American real estate and investment over the past
                   20+ years has cemented our position as industry leaders and
                   experts. Client-focused, knowledgeable and thorough, we’re
                   simply the most effective investment consultants for property
@@ -245,10 +249,9 @@ export default function AboutusGuideTag({ title }) {
                 <p>
                   <br />
                 </p>
-                {AboutDataGuide.map((item,index) => {
+                {AboutDataGuide.map((item) => {
                   return (
                     <DisplayComponent
-                    key={index}
                       title={item.title}
                       Description={item.Description}
                       img={item.img}

@@ -34,7 +34,7 @@ export default function HeaderMobileNav() {
                 </Link>
                 <i onClick={() => setAboutHandler(!AboutHandler)} className="fa fa-angle-down" />
                 <div style={{ display: ` ${AboutHandler ? 'block' : 'none'}` }} className={`level-2 ${AboutHandler ? 'open' : ''}`}>
-                    <ul className="">
+                    <ul className="no-bullets">
                         <li className="has-child">
                             <a>
                                 Mediterranean region

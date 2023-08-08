@@ -13,7 +13,7 @@ export default function News() {
 
   return (
     <div>
-      <Header title="Property Turkey Blog" />
+      <Header title="Property USA Blog" />
       <NewsBreadCrumb />
       <NewsBodyContainer />
     </div>

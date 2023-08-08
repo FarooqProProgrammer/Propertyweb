@@ -23,7 +23,7 @@ export default function SellPropertyShar() {
         </a>
       </div>
       <h1 itemProp="name headline" className="page-title abhaya">
-        Sell your home with Property Turkey
+        Sell your home with Property USA
       </h1>
       <h3 className="d-desk">
         <div className="flex">

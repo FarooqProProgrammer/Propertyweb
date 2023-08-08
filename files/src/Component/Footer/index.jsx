@@ -8,13 +8,11 @@ import {
   FooterLinksPopularLocationsData,
   FooterLinksPopularSearchesData,
 } from "../../Data/FooterLinksData";
-
-
+import PTCoins from "../../assets/Footer/PT-coins.svg";
+import VirtualTouring from "../../assets/Footer/Virtualtouring.svg";
 import PartnerButton from "../../assets/partner-button-01.svg";
-
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useState } from "react";
-import { PTCoins,VirtualTouring } from "../../assetsManagert";
 
 export default function Footer() {
   let location = useLocation();
@@ -34,10 +32,20 @@ export default function Footer() {
             <Box className="col-4 col-md-3">
               <ul className={`list-unstyled ${search ? "expanded" : null}`}>
                 <li className="li-header">Popular Searches</li>
-                {FooterLinksPopularSearchesData.map((item) => {
+                {FooterLinksPopularSearchesData.map((item, i) => {
                   return (
                     <li>
-                      <Link title={item.link}>{item.link}</Link>
+                      <Link
+                        title={item.link}
+                        to={`/about/${i + 1}`}
+                        state={{
+                          data: {
+                            title: item.link,
+                          },
+                        }}
+                      >
+                        {item.link}
+                      </Link>
                     </li>
                   );
                 })}
@@ -53,10 +61,20 @@ export default function Footer() {
             <Box className="col-4 col-md-2">
               <ul className={`list-unstyled ${locations ? "expanded" : null}`}>
                 <li className="li-header">Popular Locations</li>
-                {FooterLinksPopularLocationsData.map((item) => {
+                {FooterLinksPopularLocationsData.map((item, i) => {
                   return (
                     <li>
-                      <Link title={item.Link}>{item.Link}</Link>
+                      <Link
+                        title={item.Link}
+                        to={`/about/${i + 1}`}
+                        state={{
+                          data: {
+                            title: item.link,
+                          },
+                        }}
+                      >
+                        {item.Link}
+                      </Link>
                     </li>
                   );
                 })}
@@ -72,10 +90,20 @@ export default function Footer() {
             <Box className="col-4 col-md-2">
               <ul className="list-unstyled">
                 <li className="li-header">Buyer Guide</li>
-                {FooterLinksBuyerGuideData.map((item) => {
+                {FooterLinksBuyerGuideData.map((item, i) => {
                   return (
                     <li>
-                      <Link title={item.Link}>{item.Link}</Link>
+                      <Link
+                        title={item.Link}
+                        to={`/about/${i + 1}`}
+                        state={{
+                          data: {
+                            title: item.link,
+                          },
+                        }}
+                      >
+                        {item.Link}
+                      </Link>
                     </li>
                   );
                 })}
@@ -84,10 +112,20 @@ export default function Footer() {
             <Box className="col-4 col-md-2">
               <ul className="list-unstyled">
                 <li className="li-header">About us</li>
-                {FooterAboutUs.map((item) => {
+                {FooterAboutUs.map((item, i) => {
                   return (
                     <li>
-                      <Link title={item.link}>{item.link}</Link>
+                      <Link
+                        title={item.link}
+                        to={`/about/${i + 1}`}
+                        state={{
+                          data: {
+                            title: item.link,
+                          },
+                        }}
+                      >
+                        {item.link}
+                      </Link>
                     </li>
                   );
                 })}
@@ -100,30 +138,80 @@ export default function Footer() {
               <ul className={`list-unstyled ${links ? "expanded" : null}`}>
                 <li className="li-header">Useful Links</li>
                 <li>
-                  <Link title="Turkish Citizenship By investment">
-                    Turkish Citizenship By investment
+                  <Link
+                    title="American Citizenship By investment"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "American Citizenship By investment",
+                      },
+                    }}
+                  >
+                    American Citizenship By investment
                   </Link>
                 </li>
                 <li>
-                  <Link title="Real Estate Investment Blogs">
+                  <Link
+                    title="Real Estate Investment Blogs"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Real Estate Investment Blogs",
+                      },
+                    }}
+                  >
                     Real Estate Investment Blogs
                   </Link>
                 </li>
                 <li>
-                  <Link title="Istanbul Investment Tips">
-                    Istanbul Investment Tips
+                  <Link
+                    title="Istanbul Investment Tips"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Istanbul Investment Tips",
+                      },
+                    }}
+                  >
+                    San Fransisco Investment Tips
                   </Link>
                 </li>
+                {/* <li>
+                  <Link
+                    title="PropertyUSA TV"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "",
+                      },
+                    }}
+                  >
+                    PropertyUSA TV
+                  </Link>
+                </li> */}
                 <li>
-                  <Link title="PropertyUSA TV">PropertyUSA TV</Link>
-                </li>
-                <li>
-                  <Link title="Istanbul Investments Properties">
+                  <Link
+                    title="Istanbul Investments Properties"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Istanbul Investments Properties",
+                      },
+                    }}
+                  >
                     Istanbul Investments Properties
                   </Link>
                 </li>
                 <li>
-                  <Link title="Istanbul Investments Properties">
+                  <Link
+                    title="Istanbul Investments Properties"
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Sell Your Property",
+                      },
+                    }}
+                  >
                     Sell Your Property
                   </Link>
                 </li>
@@ -156,9 +244,7 @@ export default function Footer() {
               </Link>
             </Box>
           </Box>
-          <Box
-            className="socialmedia-links text-center padding-top-1 padding-bottom-md-3"
-          >
+          <Box className="socialmedia-links text-center padding-top-1 padding-bottom-md-3">
             <ul className="list-inline">
               <li className="list-inline-item">
                 <Link style={{ display: "block" }}>
@@ -190,27 +276,27 @@ export default function Footer() {
             </ul>
             <ul className="list-inline">
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa-brands fa-facebook-f"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   {/* <i class="fa fa-twitter " aria-hidden="true"></i> */}
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-instagram " aria-hidden="true"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-pinterest-p " aria-hidden="true"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-youtube-play " aria-hidden="true"></i>
                 </Link>
               </li>

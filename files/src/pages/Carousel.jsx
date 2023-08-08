@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Carousel = () => {
-    const items = [
-        {
-          image: "https://source.unsplash.com/random/800x600",
-          title: "Item 1",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-    ]
+  const items = [
+    {
+      image: "https://source.unsplash.com/random/800x600",
+      title: "Item 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const numItems = items.length;
 
@@ -34,7 +34,11 @@ const Carousel = () => {
                 : "opacity-0 translate-x-full"
             } absolute top-0 left-0 w-full h-full transition-opacity transform`}
           >
-            <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-full object-cover"
+            />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
               <h2 className="text-lg font-medium">{item.title}</h2>
               <p className="text-sm">{item.description}</p>

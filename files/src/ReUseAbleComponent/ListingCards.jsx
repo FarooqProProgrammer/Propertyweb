@@ -28,6 +28,10 @@ import { v4 as uuidv4 } from "uuid";
 import HeartBrokenOutlinedIcon from "@mui/icons-material/HeartBrokenOutlined";
 import StyledButton from "./StyledButton";
 import AddIcon from "@mui/icons-material/Add";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import KingBedOutlinedIcon from "@mui/icons-material/KingBedOutlined";
+import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 export default function ListingCards(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -204,22 +208,7 @@ export default function ListingCards(props) {
               >
                 <span className="flex">
                   <Tooltip title={"Favorite"} placement="left">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20.189"
-                      height="18.465"
-                      viewBox="0 0 20.189 18.465"
-                    >
-                      <path
-                        id="Heart"
-                        d="M16.76,1.479a4.887,4.887,0,0,0-6.956,0l-.684.684-.684-.684A4.919,4.919,0,0,0,1.479,8.435l7.64,7.64,7.64-7.64a4.887,4.887,0,0,0,0-6.956"
-                        transform="translate(0.975 0.975)"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth={2}
-                        fillRule="evenodd"
-                      />
-                    </svg>
+                    <FavoriteBorderOutlinedIcon sx={{ color: "white" }} />
                   </Tooltip>
                 </span>
               </Link>
@@ -277,35 +266,35 @@ export default function ListingCards(props) {
             </Link>
             <div className="features skelton-loading">
               <div className="location">
-                <Image className="icon-location img-fluid" src={LocationSvg} />
+                {/* <Image className="icon-location img-fluid" src={LocationSvg} /> */}
+                <LocationOnOutlinedIcon sx={{ color: "#5081ff" }} />
                 <span className="quantity">{props.Area}</span>
               </div>
               <div className="bedrooms flex content-space-evenly">
                 <div>
-                  <Image className="icon-bedroom img-fluid" src={Bedroomsvg} />
+                  <KingBedOutlinedIcon sx={{ color: "#5081ff" }} />
                 </div>
                 <div>
                   <span className="quantity">{props.Bedroom}</span>
                 </div>
               </div>
+            </div>
+            <div className="features skelton-loading">
               <div className="bathrooms flex content-space-evenly padding-left-05">
                 <div>
-                  <Image
-                    className="icon-bathrooms img-fluid"
-                    src={BathroomSvg}
-                  />
+                  <BathtubOutlinedIcon sx={{ color: "#5081ff" }} />
                 </div>
                 <div>
                   <span className="quantity">{props.Bathroom}</span>
                 </div>
               </div>
-              <div className="quantity  padding-dir-05">
+              <div className="bedrooms flex content-space-evenly">
                 {props.Property_Living_space}
               </div>
             </div>
             <div className="card-actions flex padding-1 content-space-between skelton-loading">
               <div className="price flex-align-self-center">
-                <span className="unit-price flex">{props.Property_Price}</span>
+                <span className="unit-price flex">${props.Property_Price}</span>
               </div>
               <div
                 className="pulse-animation youtube-icon-listing"
@@ -406,10 +395,16 @@ export default function ListingCards(props) {
             </Box>
             {error && <p>{error}</p>}
             <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
-              <input
+              {/* <input
                 type="submit"
                 defaultValue="Send"
                 className="btn btn-sm-change col-mob-6 bg-white"
+              /> */}
+              <StyledButton
+                title={"Submit"}
+                type={"submit"}
+                width="80%"
+                size="small"
               />
             </Box>
           </form>{" "}

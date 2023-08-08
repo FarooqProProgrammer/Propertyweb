@@ -37,12 +37,14 @@ import Stripe from "../Component/Stripe";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import LinkPage from "../pages/LinksPage";
+import ScrollToTop from "../Component/ScrollToTop";
 const STRIPE_KEY =
   "pk_test_51NZthDJb9Gng9KkEwwzmWF8WgS4qz7Tm5iJBfvEKYOQnLjsFvAdXlo5kgB2o9AbM74cl3NXIxw2Fn2yNvqXB4REG009JWlKgO1";
 const stripePromise = loadStripe(STRIPE_KEY);
 export default function Routing() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <PhonePopup />
       <Routes>

@@ -8,21 +8,21 @@ import PopularPost from "../../ReUseAbleComponent/PopularPost";
 import { Typography } from "@mui/material";
 
 const PopularKeyWord = [
-  "life in turkey",
-  "tourism in turkey",
+  "life in USA",
+  "tourism in USA",
   "istanbul",
-  "moving to turkey",
+  "moving to USA",
 ];
 
 const PostData = [
   {
-    link: "What are the best Food Delivery apps in Turkey?",
+    link: "What are the best Food Delivery apps in USA?",
   },
   {
-    link: "The best Turkish Beers and brands for summer days",
+    link: "The best American Beers and brands for summer days",
   },
   {
-    link: "Turkey's most dangerous animals",
+    link: "USA's most dangerous animals",
   },
 ];
 
@@ -81,7 +81,7 @@ function NewsBodyContainer() {
                           <img
                             data-src="files/economicgrowth_turkey.jpg"
                             className="img-width-height-100 lazyloaded"
-                            alt="Early Days of Erdogan’s Re-election: A Period of Action for Turkey"
+                            alt="Early Days of Erdogan’s Re-election: A Period of Action for USA"
                             src={item.image}
                           />
                         </a>
@@ -92,10 +92,10 @@ function NewsBodyContainer() {
                             <span>
                               <span className="clr-pt-dark">
                                 <a
-                                  href="=Turkish history"
-                                  title="Turkish history"
+                                  href="=American history"
+                                  title="American history"
                                 >
-                                  Turkish history
+                                  American history
                                 </a>{" "}
                               </span>
                               &nbsp;&nbsp;/&nbsp;&nbsp; {item.time}
@@ -151,24 +151,24 @@ function NewsBodyContainer() {
             </div>
             <div className="container">
               <div className="continue-readingg">
-                <p>
-                  Property Turkey's blog is designed to give you an insight into
-                  all things Turkish, including tips about life in Turkey,
-                  Turkish culture, economic &amp; political matters and how to
+                <p style={{ fontSize: "18px" }}>
+                  Property USA's blog is designed to give you an insight into
+                  all things American, including tips about life in USA,
+                  American culture, economic &amp; political matters and how to
                   get the best out of your home and investment. Showcasing many
-                  case studies of those who invested and/or moved to Turkey and
-                  integrated into the Turkish lifestyle, this blog is your
+                  case studies of those who invested and/or moved to USA and
+                  integrated into the American lifestyle, this blog is your
                   informative guide for all you need to know about making the
-                  big move overseas to Turkey.&nbsp;
+                  big move overseas to USA.&nbsp;
                 </p>
                 <p>
                   <br />
                 </p>
-                <p>
+                <p style={{ fontSize: "18px" }}>
                   Focusing on the main hotspots of Bodrum, Antalya, Fethiye,
                   Kalkan, Istanbul, Kas, Side, and more - you can expect us to
                   blog weekly about the latest trends, case studies and news
-                  coming out of the top cities in Turkey. Also expect several
+                  coming out of the top cities in USA. Also expect several
                   investment tips and hot tips for real estate and properties
                   that are hot and ready to sell now.&nbsp;
                 </p>
@@ -186,7 +186,7 @@ function NewsBodyContainer() {
                 <h3 className="title no-margin bold" style={{}}>
                   BUYER'S GUIDE
                 </h3>
-                <p>The Definitive guide to buying property in Turkey</p>
+                <p>The Definitive guide to buying property in USA</p>
                 <div className="padding-bottom-11">
                   <a
                     href=""
@@ -208,7 +208,7 @@ function NewsBodyContainer() {
                 <div className="padding-bottom-11 padding-top-3">
                   <a
                     href=""
-                    title="Turkey macroeconomic and investment analysis"
+                    title="USA macroeconomic and investment analysis"
                     className="btn right-widget-hover"
                   >
                     Download it now
@@ -228,14 +228,19 @@ function NewsBodyContainer() {
             <div className="body">
               {PopularKeyWord.map((item) => {
                 return (
-                  <a
-                    href="=turkish economy"
+                  <Link
                     freq={18}
-                    title="turkish economy"
+                    title="American economy"
                     style={{ fontSize: "1rem" }}
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: item,
+                      },
+                    }}
                   >
                     {item}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -248,85 +253,127 @@ function NewsBodyContainer() {
             <div className="body">
               <ul className="no-bullet">
                 <li>
-                  <a
-                    href="#"
-                    title="Inauguration of new metro line in Istanbul"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "What are the best Food Delivery apps in USA?",
+                      },
+                    }}
                   >
-                    Inauguration of new metro line in Istanbul
-                  </a>
+                    What are the best Food Delivery apps in USA?
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="High hopes in Pamukkale for tourist arrivals"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "The best USA Beers and brands for summer days",
+                      },
+                    }}
                   >
-                    High hopes in Pamukkale for tourist arrivals
-                  </a>
+                    The best USA Beers and brands for summer days
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Number of foreign arrivals jump as tourists flood to Turkey"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "10 Delicious USA Desserts and Sweets to Try",
+                      },
+                    }}
                   >
-                    Number of foreign arrivals jump as tourists flood to Turkey
-                  </a>
+                    10 Delicious USA Desserts and Sweets to Try
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Top 10 busiest airports – Istanbul Airport ranks among them"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Best Taxi App in USA: Getting About",
+                      },
+                    }}
                   >
-                    Top 10 busiest airports – Istanbul Airport ranks among them
-                  </a>
+                    Best Taxi App in USA: Getting About
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Recapping Day One of Turkey’s 2023 Election"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "13 unspoken USA rules you might not know",
+                      },
+                    }}
                   >
-                    Recapping Day One of Turkey’s 2023 Election
-                  </a>
+                    13 unspoken USA rules you might not know
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Turkish Airlines records net profit for sixth consecutive quarter"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "USA's most dangerous animals",
+                      },
+                    }}
                   >
-                    Turkish Airlines records net profit for sixth consecutive
-                    quarter
-                  </a>
+                    USA's most dangerous animals
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Charging licence granted to Tesla by Turkey"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Love and marriage in USA",
+                      },
+                    }}
                   >
-                    Charging licence granted to Tesla by Turkey
-                  </a>
+                    Love and marriage in USA
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Turnover of $2.7 billion for Pegasus Airlines in 2022"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "The Best Supermarkets in USA to Shop",
+                      },
+                    }}
                   >
-                    Turnover of $2.7 billion for Pegasus Airlines in 2022
-                  </a>
+                    The Best Supermarkets in USA to Shop
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="German tourists establish Turkey as top destination"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title:
+                          "15 Beautiful Places in USA That Should be on Your Bucket List",
+                      },
+                    }}
                   >
-                    German tourists establish Turkey as top destination
-                  </a>
+                    15 Beautiful Places in USA That Should be on Your Bucket
+                    List
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Turkey to designate 15 more 'nature conservation areas'"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title:
+                          "Antalya City Centre: Shopping, Beaches and Things to Do",
+                      },
+                    }}
                   >
-                    Turkey to designate 15 more 'nature conservation areas'
-                  </a>
+                    Antalya City Centre: Shopping, Beaches and Things to Do
+                  </Link>
                 </li>
               </ul>
             </div>

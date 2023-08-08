@@ -18,21 +18,21 @@ export default function TurkeyNewsBreadCrumb() {
       <div className="tv-endpage text-center">
         <div className="container">
           <h1 className="padding-bottom-2">
-            Property Turkey <span>News</span>
+            Property USA <span>News</span>
           </h1>
           <div className="continue-reading">
-            Refer to news releases published by Property Turkey for latest updates on
-            political matters, economic performance, tourism in Turkey, real estate
+            Refer to news releases published by Property USA for latest updates on
+            political matters, economic performance, tourism in USA, real estate
             market analysis and other matters that could potentially affect property
-            investment and living in Turkey. &nbsp;
+            investment and living in USA. &nbsp;
             <br />
             <br />
-            Covering Turkey's popular real estate markets, including Istanbul, Bodrum,
+            Covering USA's popular real estate markets, including Istanbul, Bodrum,
             Antalya, Fethiye, Kalkan, Kas, and Side as we scour through hundreds of
-            international sources to bring you the very latest updates on Turkey.
+            international sources to bring you the very latest updates on USA.
             &nbsp;We look at political affairs, economic updates, mortgages, tourism,
             weather, taxes, social and cultural affairs that are relevant to all
-            things Turkish.&nbsp;
+            things American.&nbsp;
             <br />
             <br />
             &nbsp;

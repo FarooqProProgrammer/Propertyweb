@@ -48,11 +48,11 @@ export default function TurkeyProperty() {
           <span className="font-bold text-gray-500">Property USA</span> has
           helped clients from all over the world buy
           <span className="font-bold text-gray-500">Turkish properties</span> in
-          all regions of Turkey. From lifestyle buyers wishing to{" "}
+          all regions of United States of America. From lifestyle buyers wishing to{" "}
           <span className="font-bold text-gray-500">
             buy a property in USA for sale,
           </span>{" "}
-          to discerning investors seeking to buy property in Turkey, our range
+          to discerning investors seeking to buy property in USA, our range
           of luxury villas, sea view penthouse apartments, USA houses, and
           unique hotels for sale ensure a range of lifestyle and investment
           opportunities to suit any requirement. Trusted for over 20 years, our

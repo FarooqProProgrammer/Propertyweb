@@ -1,43 +1,41 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import SingleCarousel from '../../ReUseAbleComponent/SingleCarousel'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import SingleCarousel from "../../ReUseAbleComponent/SingleCarousel";
 
 const BulletOne = [
   {
     href: "https://www.propertyturkey.com/blog-turkey/the-famous-taksim-square-in-istanbul",
-    title: "The Famous Taksim Square in Istanbul"
+    title: "The Famous Taksim Square in Istanbul",
   },
 
   {
     href: "https://www.propertyturkey.com/blog-turkey/early-days-of-erdogans-reelection-a-period-of-action-for-turkey",
-    title: " Early Days of Erdogan’s Re-election: A Period of Action for Turkey"
+    title:
+      " Early Days of Erdogan’s Re-election: A Period of Action for USA",
   },
-
-]
+];
 
 const BulletTwo = [
   {
     href: "https://www.propertyturkey.com/news/inauguration-of-new-metro-line-in-istanbul",
-    title: " Inauguration of new metro line in Istanbul"
+    title: " Inauguration of new metro line in Istanbul",
   },
 
   {
     href: "https://www.propertyturkey.com/news/high-hopes-in-pamukkale-for-tourist-arrivals",
-    title: "High hopes in Pamukkale for tourist arrivals"
+    title: "High hopes in Pamukkale for tourist arrivals",
   },
-
-
-
-]
+];
 
 const Advertising = [
   {
-    title: "Any links or references to third party web sites will not be published",
+    title:
+      "Any links or references to third party web sites will not be published",
   },
 
   {
-    title: "Minimum three images are needed before a listing will be published.",
+    title:
+      "Minimum three images are needed before a listing will be published.",
   },
 
   {
@@ -53,22 +51,21 @@ const Advertising = [
   },
 
   {
-    title: "Listings with insufficient / short narratives will not be published",
+    title:
+      "Listings with insufficient / short narratives will not be published",
   },
-]
+];
 
 const ContactBodyData = [
   {
     title: "We are all over the country",
-    description: "Our regional offices in Istanbul, Bodrum, Fethiye, Kalkan, Kas, Antalya and Side mean we can build local relationships with no need to rely on third parties. You can meet our team by By having offices all over the country, we can guarantee specialised guidance in each region of Turkey with a dedicated regional manager ready to assist you.",
+    description:
+      "Our regional offices in Istanbul, Bodrum, Fethiye, Kalkan, Kas, Antalya and Side mean we can build local relationships with no need to rely on third parties. You can meet our team by By having offices all over the country, we can guarantee specialised guidance in each region of USA with a dedicated regional manager ready to assist you.",
     img: "https://placehold.co/600x400",
-  }
-]
+  },
+];
 
 export default function ContactBody() {
-
-
-
   return (
     <div
       className="article-container"
@@ -96,7 +93,7 @@ export default function ContactBody() {
               </a>
             </div>
             <h1 itemProp="name headline" className="page-title abhaya">
-              Sell your home with Property Turkey
+              Sell your home with Property USA
             </h1>
             <h3 className="d-desk">
               <div className="flex">
@@ -129,47 +126,45 @@ export default function ContactBody() {
             id="iframe-width-about"
           >
             <p>
-              Are you up-sizing your Turkish home or has time come to cash in your
-              investment? Whatever your reasons for selling your property in Turkey,
-              you certainly will want to achieve a handsome price with minimum
-              imposition on your time. &nbsp; &nbsp; &nbsp;
+              Are you up-sizing your Turkish home or has time come to cash in
+              your investment? Whatever your reasons for selling your property
+              in USA, you certainly will want to achieve a handsome price
+              with minimum imposition on your time. &nbsp; &nbsp; &nbsp;
             </p>
             <p>
               <br />
             </p>
             <p>
               <em>
-                <span style={{ fontSize: 18 }}>“</span>We bought our home through
-                Property Turkey eight years ago and they were fantastic then so
-                naturally we returned when it was time to sell. Aykut and his
-                Fethiye team were completely professional, walking us through the
-                sale process and helping us get a fair price for our home. Thanks so
-                much, team!<span style={{ fontSize: 18 }}>”</span>
+                <span style={{ fontSize: 18 }}>“</span>We bought our home
+                through Property USA eight years ago and they were fantastic
+                then so naturally we returned when it was time to sell. Aykut
+                and his Fethiye team were completely professional, walking us
+                through the sale process and helping us get a fair price for our
+                home. Thanks so much, team!
+                <span style={{ fontSize: 18 }}>”</span>
               </em>{" "}
               - <strong>The Johnson family, UK/Ovacik</strong>
             </p>
-            {
-              ContactBodyData.map((item) => {
-                return (
-                  <>
-                    <h4>
-
-                      <br />
-                      <img
-                        alt="We are here to help you sell"
-                        className="pyro-image alignment-right fr-dii fr-fir fr-draggable"
-                        data-pyroimage="true"
-                        src={item.img}
-                        title="We are here to help you sell"
-                        style={{ width: 250 }}
-                      />
-                      {item.title}
-                    </h4>
-                    <p>{item.description}</p>
-                  </>
-                )
-              })
-            }
+            {ContactBodyData.map((item) => {
+              return (
+                <>
+                  <h4>
+                    <br />
+                    <img
+                      alt="We are here to help you sell"
+                      className="pyro-image alignment-right fr-dii fr-fir fr-draggable"
+                      data-pyroimage="true"
+                      src={item.img}
+                      title="We are here to help you sell"
+                      style={{ width: 250 }}
+                    />
+                    {item.title}
+                  </h4>
+                  <p>{item.description}</p>
+                </>
+              );
+            })}
 
             <p>
               <br />
@@ -182,18 +177,14 @@ export default function ContactBody() {
             <p>
               <br />
             </p>
-            <h4>Property Turkey terms of advertising</h4>
-            {
-              Advertising.map((item, index) => {
-                return (
-                  <p>
-                    {index}. {item.title}
-                  </p>
-                )
-              })
-            }
-
-
+            <h4>Property USA terms of advertising</h4>
+            {Advertising.map((item, index) => {
+              return (
+                <p>
+                  {index}. {item.title}
+                </p>
+              );
+            })}
           </div>
           {/*  */}
           <div className="cf col-dis-12 col-tab-12 col-dis-12 controls">
@@ -204,8 +195,6 @@ export default function ContactBody() {
               Want to sell property ?
             </Link>
           </div>
-
-
         </article>
         {/*  */}
         <div className="text-center-xs flex-xl">
@@ -222,9 +211,7 @@ export default function ContactBody() {
 
         <SingleCarousel />
         <aside className="widgets col-dis-3 col-tab-3 col-mob-12 no-padding widget-blogendpage">
-          <a
-
-          >
+          <a>
             <img
               data-src="https://www.propertyturkey.com/front/image/pt-brochure-download.jpg"
               alt="download our online borchour"
@@ -236,7 +223,7 @@ export default function ContactBody() {
             <div className="header-img-buyerguide">
               <div className="container">
                 <h3 className="title no-margin bold">BUYER'S GUIDE</h3>
-                <p>The Definitive guide to buying property in Turkey</p>
+                <p>The Definitive guide to buying property in USA</p>
                 <div className="padding-bottom-11">
                   <a
                     href="https://www.propertyturkey.com/buyer-guide/definitive-buyer-guide-pdf"
@@ -253,22 +240,18 @@ export default function ContactBody() {
             <h3 className="title">Latest Posts</h3>
             <div className="body">
               <ul className="no-bullet">
-                {
-                  BulletOne.map((item) => {
-                    return (
-                      <li>
-                        <a
-                          href={item.href}
-                          title="The Famous Taksim Square in Istanbul"
-                        >
-                          {item.title}
-                        </a>
-                      </li>
-                    )
-                  })
-                }
-
-
+                {BulletOne.map((item) => {
+                  return (
+                    <li>
+                      <a
+                        href={item.href}
+                        title="The Famous Taksim Square in Istanbul"
+                      >
+                        {item.title}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -276,28 +259,23 @@ export default function ContactBody() {
             <h3 className="title">Latest News</h3>
             <div className="body">
               <ul className="no-bullet">
-                {
-                  BulletTwo.map((item) => {
-                    return (
-                      <li>
-                        <a
-                          href={item.href}
-                          title="Inauguration of new metro line in Istanbul"
-                        >
-                          {item.title}
-                        </a>
-                      </li>
-                    )
-                  })
-                }
-
-
+                {BulletTwo.map((item) => {
+                  return (
+                    <li>
+                      <a
+                        href={item.href}
+                        title="Inauguration of new metro line in Istanbul"
+                      >
+                        {item.title}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
         </aside>
       </div>
     </div>
-
-  )
+  );
 }

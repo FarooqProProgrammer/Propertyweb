@@ -9,6 +9,7 @@ import PhoneComponent from "../../ReUseAbleComponent/PhoneComponent";
 import { ContactPageData } from "../../Data/ContactPageData";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function ContactusForm() {
   const user = useSelector((state) => state.AuthReducer.login);
@@ -81,7 +82,15 @@ export default function ContactusForm() {
   return (
     <div className="wrap-dis-9 wrap-tab-9 wrap-mob-9 clearfix">
       <section className="col-dis-8 col-tab-8 col-mob-12 fl-dis-right fl-tab-right">
-        <form onSubmit={HandleSubmit} className="box white contactus-form">
+        <form
+          onSubmit={HandleSubmit}
+          className="box white contactus-form"
+          style={{
+            borderRadius: "10px",
+            margin: "20px 0",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          }}
+        >
           <h1 className="title text-center clr-pt-darkgrey abhaya">
             Connect With Us
           </h1>
@@ -130,6 +139,7 @@ export default function ContactusForm() {
               onChange={(e) => setMessage(e.target.value)}
               name="msg"
               rows={4}
+              style={{ height: "170px" }}
             />
           </label>
           <input
@@ -140,11 +150,12 @@ export default function ContactusForm() {
           />
           {error && <p>{error}</p>}
           <div className="cf text-center">
-            <input
+            <StyledButton title={"Send"} type="submit" />
+            {/* <input
               type="submit"
               defaultValue="Send"
               className="btn contactus-hover bg-pt crl-white"
-            />
+            /> */}
           </div>
         </form>
       </section>

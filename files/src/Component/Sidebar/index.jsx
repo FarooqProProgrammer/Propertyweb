@@ -16,7 +16,7 @@ const Sidebar = () => {
   };
   const features = [
     {
-      title: "Investing in Turkey",
+      title: "Investing in USA",
       data: "Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.",
     },
     {
@@ -36,7 +36,7 @@ const Sidebar = () => {
       data: "Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.",
     },
     {
-      title: "Living in Turkey",
+      title: "Living in USA",
       data: "Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.",
     },
   ];

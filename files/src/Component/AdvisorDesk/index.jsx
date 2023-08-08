@@ -47,8 +47,8 @@ export default function AdvisorDesk() {
             <section className="adviser-form h100">
               <div className="adviser-form-container h100">
                 <h2 className="abhaya">
-                  Talk to a local Property
-                  <br /> USA Adviser
+                  Talk to a local <b>American</b>
+                  <br /> Property Adviser
                 </h2>
                 <form
                   onSubmit={handleSubmit(onSubmit)}

@@ -12,9 +12,9 @@ export default function AboutUsGuideLatestPost() {
             <Box className="body">
                 <ul className="no-bullet">
                     {
-                        AboutUseGuidePostData.map((item,index)=>{
+                        AboutUseGuidePostData.map((item)=>{
                             return (
-                                <li key={index}>
+                                <li>
                                 <Link
                                     href=""
                                     title={item.Post}
